@@ -23,8 +23,8 @@
   <body>
     <!--Header-->
     <div class="jumbotron jumbotron-fluid" id="jumbo">
-      <div class="container" id="containerOne">
-        <div class="d-flex align-items-center">
+      <div class="container-fluid" id="containerOne">
+        <div class="first-link">
           <a href="#SweetDelightsBakery" class="link-one"
             ><span
               class="fa-solid fa-cookie-bite"
@@ -35,76 +35,83 @@
         </div>
         <div class="header-flex-items">
           <div class="motto">HERE TO SATISFY YOUR CRAVINGS!</div>
-          <div class="login">
-            <button
-              type="button"
-              class="btn btn-info"
-              data-toggle="modal"
-              data-target="#modalPopup"
-            >
-              LOG IN
-            </button>
+          <div class="login mt-2 mt-md-0">
+            <div class="login">
+              <button
+                type="button"
+                class="btn btn-info"
+                data-toggle="modal"
+                data-target="#modalPopup"
+              >
+                LOG IN
+              </button>
 
-            <!--Modal Popup-->
-            <div
-              class="modal fade"
-              id="modalPopup"
-              data-backdrop="static"
-              tabindex="-1"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Login Here</h5>
-                    <button
-                      type="button"
-                      class="close"
-                      data-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <form>
-                      <div class="form-element">
-                        <label for="email">Email:</label>
+              <!--Modal Popup-->
+              <div
+                class="modal fade"
+                id="modalPopup"
+                data-backdrop="static"
+                tabindex="-1"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Login Here</h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-element">
+                          <label for="email">Email:</label>
 
-                        <input
-                          type="text"
-                          id="email"
-                          placeholder="Enter email"
-                        />
-                        <small class="emailPrivate" class="form-text text-muted"
-                          >We'll never share your email with anyone else.</small
-                        >
-                      </div>
-                      <br />
-                      <div class="form-element">
-                        <label for="password">Password:</label>
-                        <input
-                          type="password"
-                          id="password"
-                          placeholder="Enter password"
-                        />
-                      </div>
-                      <div class="form-element">
-                        <input type="checkbox" id="remember-me" />
-                        <label for="remember-me">Check me out</label>
-                      </div>
-                      <br />
-                      <button type="submit" class="btn btn-info">Submit</button>
-                    </form>
-                  </div>
+                          <input
+                            type="text"
+                            id="email"
+                            placeholder="Enter email"
+                          />
+                          <small
+                            class="emailPrivate"
+                            class="form-text text-muted"
+                            >We'll never share your email with anyone
+                            else.</small
+                          >
+                        </div>
+                        <br />
+                        <div class="form-element">
+                          <label for="password">Password:</label>
+                          <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter password"
+                          />
+                        </div>
+                        <div class="form-element">
+                          <input type="checkbox" id="remember-me" />
+                          <label for="remember-me">Check me out</label>
+                        </div>
+                        <br />
+                        <button type="submit" class="btn btn-info">
+                          Submit
+                        </button>
+                      </form>
+                    </div>
 
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-dismiss="modal"
-                    >
-                      Close
-                    </button>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -114,7 +121,7 @@
       </div>
     </div>
     <!--Navigation Bar-->
-    <nav class="navbar navbar-expand-sm bg-light sticky-top">
+    <nav class="navbar navbar-expand-sm bg-light sticky-top" id="navbar">
       <div class="container-fluid">
         <button
           class="navbar-toggler bg-info"
@@ -130,10 +137,7 @@
           <ul class="nav navbar-nav">
             <li class="nav-item" title="Home">
               <a class="nav-link" href="#SweetDelightsBakery"
-                ><span
-                  class="fa-solid fa-house"
-                  style="color: rgb(23, 162, 184)"
-                ></span
+                ><span class="fa-solid fa-house"></span
               ></a>
             </li>
             <li class="nav-item dropdown">
@@ -177,23 +181,23 @@
             </li>
           </ul>
           <!--Right Aligned Links-->
-          <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item" title="Profile">
+          <ul class="nav navbar-nav ml-auto d-flex flex-row" id="nav-icons">
+            <li class="nav-item mr-3" title="Profile">
               <a class="nav-link" href="#profile"
                 ><span class="fa-solid fa-user"></span
               ></a>
             </li>
-            <li class="nav-item" title="Notifications">
+            <li class="nav-item mr-3" title="Notifications">
               <a class="nav-link" href="#notification"
                 ><span class="fa-solid fa-bell"></span
               ></a>
             </li>
-            <li class="nav-item" title="Messages">
+            <li class="nav-item mr-3" title="Messages">
               <a class="nav-link" href="#messages"
                 ><span class="fa-solid fa-message"></span
               ></a>
             </li>
-            <li class="nav-item" title="Friends">
+            <li class="nav-item mr-3" title="Friends">
               <a class="nav-link" href="#friends"
                 ><span class="fa-solid fa-user-group"></span
               ></a>
@@ -275,7 +279,7 @@
               >
             </h2>
             <div class="winner">
-              <h5><a class="section-link" href="#">Kate Lockwood</a></h5>
+              <h5><a class="section-link" href="#">Justina Mwale</a></h5>
               <div class="aspect-ratio-box">
                 <img
                   src="winner.webp"
@@ -284,7 +288,7 @@
                 />
               </div>
               <p style="text-transform: uppercase">
-                Zeeland baker impresses judges with her Cinnamon-Cardamom
+                Lusaka baker impresses judges with her Cinnamon-Cardamom
                 Crescent Twists!
               </p>
             </div>
@@ -374,14 +378,16 @@
             >
           </div>
           <div id="footerDiv">
-            <ul id="socialmedia">
+            <ul class="socialmedia">
               <li>
                 <a class="icon" href="#" target="_blank"
                   ><i class="fab fa-facebook-square"></i
                 ></a>
               </li>
               <li>
-                <a class="icon" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="icon" href="#" target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
               </li>
               <li>
                 <a class="icon" href="#"><i class="fab fa-instagram"></i></a>
@@ -393,29 +399,47 @@
           </div>
         </div>
         <div id="footerTwo">
-          
-            <li class="partnerships">
-              <a class="footerLinks" href="#partnerships">Partnerships</a>
+          <ul class="footerUl">
+            <li>
+              <a class="footerLinks" href="#partnerships" target="_blank"
+                >Partnerships</a
+              >
             </li>
-            <li><a class="footerLinks" href="#api">API</a></li>
-            <li><a class="footerLinks" href="#termsofuse">Terms of Use</a></li>
-            <li><a class="footerLinks" href="#privacypolicy">Privacy Policy</a></li>
-            <li><a class="footerLinks" href="#cookiesettings">Cookie Settings</a></li>
-            <li><a class="footerLinks" href="#help">Help</a></li>
-            <li><a class="footerLinks" href="careers">Careers</a></li>
+            <li><a class="footerLinks" href="#api" target="_blank">API</a></li>
+            <li>
+              <a class="footerLinks" href="#termsofuse" target="_blank"
+                >Terms of Use</a
+              >
+            </li>
+            <li>
+              <a class="footerLinks" href="#privacypolicy" target="_blank"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a class="footerLinks" href="#cookiesettings" target="_blank"
+                >Cookie Settings</a
+              >
+            </li>
+            <li>
+              <a class="footerLinks" href="#help" target="_blank">Help</a>
+            </li>
+            <li>
+              <a class="footerLinks" href="careers" target="_blank">Careers</a>
+            </li>
           </ul>
         </div>
         <div id="footerThree">
           <div><a>Do not sell my information</a></div>
-          <div>
-            <div class="container text-muted text-center py-3 mt-5">
-              <h5>
-                Copyright &copy; 2025
-                <a class="copyright" href="https://github.com/nziza-jpg"
-                  >All Rights Are Reserved By Nziza Tayali</a
-                >
-              </h5>
-            </div>
+        </div>
+        <div id="footerFour">
+          <div class="container text-muted text-center mt-2">
+            <h5>
+              Copyright &copy; 2025
+              <a class="copyright" href="https://github.com/nziza-jpg"
+                >All Rights Are Reserved By Nziza Tayali</a
+              >
+            </h5>
           </div>
         </div>
       </footer>
