@@ -21,131 +21,135 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!--Header-->
+    <!-- Header with branding and login -->
     <div class="jumbotron jumbotron-fluid" id="jumbo">
       <div class="container-fluid" id="containerOne">
+        <!-- Logo / Site Title -->
         <div class="first-link">
-          <a href="#SweetDelightsBakery" class="link-one"
-            ><span
-              class="fa-solid fa-cookie-bite"
-              style="font-size: 40px"
-            ></span
-            >Sweet Delight's Bakery</a
-          >
+          <a href="#SweetDelightsBakery" class="link-one">
+            <span class="fa-solid fa-cookie-bite"></span>
+            Sweet Delight's Bakery
+          </a>
         </div>
+
         <div class="header-flex-items">
           <div class="motto">HERE TO SATISFY YOUR CRAVINGS!</div>
+
+          <!-- Login Button with Modal Trigger -->
           <div class="login mt-2 mt-md-0">
-            <div class="login">
-              <button
-                type="button"
-                class="btn btn-info"
-                data-toggle="modal"
-                data-target="#modalPopup"
-              >
-                LOG IN
-              </button>
+            <button
+              type="button"
+              class="btn btn-info"
+              data-toggle="modal"
+              data-target="#modalPopup"
+            >
+              LOG IN
+            </button>
 
-              <!--Modal Popup-->
-              <div
-                class="modal fade"
-                id="modalPopup"
-                data-backdrop="static"
-                tabindex="-1"
-              >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title">Login Here</h5>
-                      <button
-                        type="button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <span aria-hidden="true">&times;</span>
+            <!-- Modal Popup for Login -->
+            <div
+              class="modal fade"
+              id="modalPopup"
+              data-backdrop="static"
+              tabindex="-1"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h5 class="modal-title">Login Here</h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+
+                  <!-- Modal Body -->
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-element">
+                        <label for="email">Email:</label>
+                        <input
+                          type="text"
+                          id="email"
+                          placeholder="Enter email"
+                        />
+                        <small class="form-text text-muted emailPrivate">
+                          We'll never share your email with anyone else.
+                        </small>
+                      </div>
+                      <br />
+                      <div class="form-element">
+                        <label for="password">Password:</label>
+                        <input
+                          type="password"
+                          id="password"
+                          placeholder="Enter password"
+                        />
+                      </div>
+                      <div class="form-element">
+                        <input type="checkbox" id="remember-me" />
+                        <label for="remember-me">Check me out</label>
+                      </div>
+                      <br />
+                      <button type="submit" class="btn btn-info">
+                        Submit
                       </button>
-                    </div>
-                    <div class="modal-body">
-                      <form>
-                        <div class="form-element">
-                          <label for="email">Email:</label>
+                    </form>
+                  </div>
 
-                          <input
-                            type="text"
-                            id="email"
-                            placeholder="Enter email"
-                          />
-                          <small
-                            class="emailPrivate"
-                            class="form-text text-muted"
-                            >We'll never share your email with anyone
-                            else.</small
-                          >
-                        </div>
-                        <br />
-                        <div class="form-element">
-                          <label for="password">Password:</label>
-                          <input
-                            type="password"
-                            id="password"
-                            placeholder="Enter password"
-                          />
-                        </div>
-                        <div class="form-element">
-                          <input type="checkbox" id="remember-me" />
-                          <label for="remember-me">Check me out</label>
-                        </div>
-                        <br />
-                        <button type="submit" class="btn btn-info">
-                          Submit
-                        </button>
-                      </form>
-                    </div>
-
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-dismiss="modal"
-                      >
-                        Close
-                      </button>
-                    </div>
+                  <!-- Modal Footer -->
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- End Modal -->
           </div>
         </div>
       </div>
     </div>
-    <!--Navigation Bar-->
+
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-sm bg-light sticky-top" id="navbar">
       <div class="container-fluid">
+        <!-- Hamburger Toggler -->
         <button
           class="navbar-toggler bg-info"
           type="button"
           data-toggle="collapse"
           data-target="#collapsibleNavbar"
           title="display/close navigation bar"
+          style="color: white;"
         >
           <span class="fa-solid fa-bars"></span>
         </button>
+
+        <!-- Collapsible Nav Links -->
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <!--Left Aligned links-->
+          <!-- Left Aligned Links -->
           <ul class="nav navbar-nav">
             <li class="nav-item" title="Home">
-              <a class="nav-link" href="#SweetDelightsBakery"
-                ><span class="fa-solid fa-house"></span
-              ></a>
+              <a class="nav-link" href="#SweetDelightsBakery">
+                <span class="fa-solid fa-house"></span>
+              </a>
             </li>
+
+            <!-- Dropdown Menus -->
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-                href="#"
-                >Cakes
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+                Cakes
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Vanilla Cake</a></li>
@@ -153,12 +157,10 @@
                 <li><a class="dropdown-item" href="#">Red Velvet Cake</a></li>
               </ul>
             </li>
+
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-                href="#"
-                >Pasteries
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+                Pasteries
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Croissant</a></li>
@@ -166,12 +168,10 @@
                 <li><a class="dropdown-item" href="#">Scone</a></li>
               </ul>
             </li>
+
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-                href="#"
-                >Breads
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+                Breads
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Ciabatta</a></li>
@@ -180,269 +180,229 @@
               </ul>
             </li>
           </ul>
-          <!--Right Aligned Links-->
+
+          <!-- Right Aligned Icons -->
           <ul class="nav navbar-nav ml-auto d-flex flex-row" id="nav-icons">
             <li class="nav-item mr-3" title="Profile">
-              <a class="nav-link" href="#profile"
-                ><span class="fa-solid fa-user"></span
-              ></a>
+              <a class="nav-link" href="#profile">
+                <span class="fa-solid fa-user"></span>
+              </a>
             </li>
             <li class="nav-item mr-3" title="Notifications">
-              <a class="nav-link" href="#notification"
-                ><span class="fa-solid fa-bell"></span
-              ></a>
+              <a class="nav-link" href="#notification">
+                <span class="fa-solid fa-bell"></span>
+              </a>
             </li>
             <li class="nav-item mr-3" title="Messages">
-              <a class="nav-link" href="#messages"
-                ><span class="fa-solid fa-message"></span
-              ></a>
+              <a class="nav-link" href="#messages">
+                <span class="fa-solid fa-message"></span>
+              </a>
             </li>
             <li class="nav-item mr-3" title="Friends">
-              <a class="nav-link" href="#friends"
-                ><span class="fa-solid fa-user-group"></span
-              ></a>
+              <a class="nav-link" href="#friends">
+                <span class="fa-solid fa-user-group"></span>
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!--Main Sections-->
-    <div class="container my-4">
-      <div class="row">
-        <!-- Left Side: Behind the Dough -->
-        <div class="col-md-8 mb-4">
-          <div class="section-box">
-            <h2 class="section-title">
-              <a class="main-section-link" href="#behindthedough"
-                >Behind the Dough</a
-              >
-            </h2>
-            <div class="announcement">
-              <h5><a class="section-link" href="#">New Menu Drops</a></h5>
-              <p>Take a look at our exciting new editions to the menu.</p>
-              <hr />
-              <h5><a class="section-link" href="#"> Meet the Bakers</a></h5>
-              <p>Meet the faces and the hands behind our delicious delights.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Side: Webtoon of the Month -->
-        <div class="col-md-4 mb-4">
-          <div class="section-box">
-            <h2 class="section-title">
-              <a class="main-section-link" href="#sweettreatsofthemonth"
-                >Sweet treats of the Month</a
-              >
-            </h2>
-            <div class="treats">
-              <h5><a class="section-link" href="#">Signature desserts</a></h5>
-              <div class="aspect-ratio-box">
-                <img
-                  src="dessert.jpg"
-                  alt="Neapolitan Mousses"
-                  class="img-fluid"
-                />
-              </div>
-              <p><strong>April's Star: Filled Neapolitan Mousses!</strong></p>
-            </div>
-          </div>
-        </div>
-        <!--Left Side: Customer Corner-->
-        <div class="col-md-8 mb-4">
-          <div class="section-box">
-            <h2 class="section-title">
-              <a class="main-section-link" href="#customercorner"
-                >Customer Corner</a
-              >
-            </h2>
-            <div class="customer-corner">
-              <h5><a class="section-link" href="#">Your Recipes</a></h5>
-              <p>An entire section dedicated to your intriguing recipes!</p>
-              <hr />
-              <h5><a class="section-link" href="#">Easter Contest</a></h5>
-              <p>
-                Stand a chance to win a
-                <strong>BRAND NEW BAKING OVEN</strong> by showing us your skills
-                in our Easter Contest on the
-                <strong>30th of April, 2025!</strong>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!--Right: Winner of the last contest-->
-        <div class="col-md-4 mb-4">
-          <div class="section-box">
-            <h2 class="section-title">
-              <a class="main-section-link" href="#winner"
-                >Last Contest's Winner</a
-              >
-            </h2>
-            <div class="winner">
-              <h5><a class="section-link" href="#">Justina Mwale</a></h5>
-              <div class="aspect-ratio-box">
-                <img
-                  src="winner.webp"
-                  alt="Black woman holding a cake"
-                  class="img-fluid"
-                />
-              </div>
-              <p style="text-transform: uppercase">
-                Lusaka baker impresses judges with her Cinnamon-Cardamom
-                Crescent Twists!
-              </p>
-            </div>
-          </div>
-        </div>
-        <!--Left Side: Seasonal Specials-->
-        <div class="col-md-8 mb-4">
-          <div class="section-box">
-            <h2 class="section-title">
-              <a class="main-section-link" href="#seasonalspecials"
-                >Seasonal Specials</a
-              >
-            </h2>
-            <div class="specials">
-              <h5><a class="section-link" href="#">Winter</a></h5>
-              <p>
-                1. Gingerbread cookies <br />2. Spiced apple cider donuts<br />
-                3. Cranberry orange scones <br />4. Peppermint bark brownies
-                <br />5. Hot cross buns
-              </p>
-              <hr />
-              <h5><a class="section-link" href="#">Spring</a></h5>
-              <p>
-                1. Lemon lavender pound cake<br />
-                2. Strawberry rhubarb tarts<br />
-                3. Easter egg-shaped sugar cookies<br />
-                4. Fresh fruit muffins (e.g. blueberry, raspberry)<br />
-                5. Spring flower-themed cupcakes
-              </p>
-              <hr />
-              <h5><a class="section-link" href="#">Summer</a></h5>
-              <p>
-                1. Watermelon basil sorbet<br />
-                2. Peach cobbler<br />
-                3. Summer fruit salads (e.g. strawberry, blueberry,
-                raspberry)<br />
-                4. Lemon bars<br />
-                5. Ice cream sandwiches
-              </p>
-              <hr />
-              <h5><a class="section-link" href="#">Autumn</a></h5>
-              <p>
-                1. Pumpkin spice cake<br />
-                2. Apple cider donuts<br />
-                3. Maple pecan pie<br />
-                4. Spiced pear bread<br />
-                5. Cinnamon sugar pumpkin muffins
-              </p>
-            </div>
-          </div>
-        </div>
-        <!--Right Side: The icing room-->
-        <div class="col-md-4 mb-1">
-          <div class="section-box icingroom">
-            <h2 class="section-title">
-              <a class="main-section-link" href="#icingroom">The Icing Room</a>
-            </h2>
-            <div class="icing-room">
-              <h5>
-                <a class="section-link" href="#"
-                  >Some interesting polls for you</a
-                >
-              </h5>
-              <p>
-                Cupcakes vs. Donuts -- Which reigns supreme?<br />
-                Chocolate or Vanilla -- LET US KNOW!
-              </p>
-              <hr />
-              <h5><a class="section-link" href="#">Chilling reviews</a></h5>
-              <p>Let us know what you think and leave us a chilling review.</p>
-            </div>
-          </div>
+<div class="container my-4">
+  <div class="row">
+    <!-- Left Side: Behind the Dough -->
+    <div class="col-md-8 mb-4">
+      <div class="section-box">
+        <h2 class="section-title">
+          <a class="main-section-link" href="#behindthedough">Behind the Dough</a>
+        </h2>
+        <div class="announcement">
+          <h5><a class="section-link" href="#">New Menu Drops</a></h5>
+          <p>Take a look at our exciting new editions to the menu.</p>
+          <hr />
+          <h5><a class="section-link" href="#">Meet the Bakers</a></h5>
+          <p>Meet the faces and the hands behind our delicious delights.</p>
         </div>
       </div>
     </div>
-    <!--Footer-->
-    <div class="container-fluid" id="footer">
-      <footer>
-        <div id="footerOne">
-          <div class="first-link">
-            <a href="#SweetDelightsBakery" class="link-one"
-              ><span
-                class="fa-solid fa-cookie-bite"
-                style="font-size: 40px"
-              ></span
-              >Sweet Delight's Bakery</a
-            >
+
+    <!-- Right Side: Sweet Treats of the Month -->
+    <div class="col-md-4 mb-4">
+      <div class="section-box">
+        <h2 class="section-title">
+          <a class="main-section-link" href="#sweettreatsofthemonth">Sweet Treats of the Month</a>
+        </h2>
+        <div class="treats">
+          <h5><a class="section-link" href="#">Signature Desserts</a></h5>
+          <div class="aspect-ratio-box">
+            <img src="dessert.jpg" alt="Neapolitan Mousses" class="img-fluid" />
           </div>
-          <div id="footerDiv">
-            <ul class="socialmedia">
-              <li>
-                <a class="icon" href="#" target="_blank"
-                  ><i class="fab fa-facebook-square"></i
-                ></a>
-              </li>
-              <li>
-                <a class="icon" href="#" target="_blank"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-              </li>
-              <li>
-                <a class="icon" href="#"><i class="fab fa-instagram"></i></a>
-              </li>
-              <li>
-                <a class="icon" href="#"><i class="fab fa-youtube"></i></a>
-              </li>
-            </ul>
-          </div>
+          <p><strong>April's Star: Filled Neapolitan Mousses!</strong></p>
         </div>
-        <div id="footerTwo">
-          <ul class="footerUl">
-            <li>
-              <a class="footerLinks" href="#partnerships" target="_blank"
-                >Partnerships</a
-              >
-            </li>
-            <li><a class="footerLinks" href="#api" target="_blank">API</a></li>
-            <li>
-              <a class="footerLinks" href="#termsofuse" target="_blank"
-                >Terms of Use</a
-              >
-            </li>
-            <li>
-              <a class="footerLinks" href="#privacypolicy" target="_blank"
-                >Privacy Policy</a
-              >
-            </li>
-            <li>
-              <a class="footerLinks" href="#cookiesettings" target="_blank"
-                >Cookie Settings</a
-              >
-            </li>
-            <li>
-              <a class="footerLinks" href="#help" target="_blank">Help</a>
-            </li>
-            <li>
-              <a class="footerLinks" href="careers" target="_blank">Careers</a>
-            </li>
-          </ul>
-        </div>
-        <div id="footerThree">
-          <div><a>Do not sell my information</a></div>
-        </div>
-        <div id="footerFour">
-          <div class="container text-muted text-center mt-2">
-            <h5>
-              Copyright &copy; 2025
-              <a class="copyright" href="https://github.com/nziza-jpg"
-                >All Rights Are Reserved By Nziza Tayali</a
-              >
-            </h5>
-          </div>
-        </div>
-      </footer>
+      </div>
     </div>
-  </body>
+
+    <!-- Left Side: Customer Corner -->
+    <div class="col-md-8 mb-4">
+      <div class="section-box">
+        <h2 class="section-title">
+          <a class="main-section-link" href="#customercorner">Customer Corner</a>
+        </h2>
+        <div class="customer-corner">
+          <h5><a class="section-link" href="#">Your Recipes</a></h5>
+          <p>An entire section dedicated to your intriguing recipes!</p>
+          <hr />
+          <h5><a class="section-link" href="#">Easter Contest</a></h5>
+          <p>
+            Stand a chance to win a <strong>BRAND NEW BAKING OVEN</strong> by showing us your skills
+            in our Easter Contest on the <strong>30th of April, 2025!</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side: Contest Winner -->
+    <div class="col-md-4 mb-4">
+      <div class="section-box">
+        <h2 class="section-title">
+          <a class="main-section-link" href="#winner">Last Contest's Winner</a>
+        </h2>
+        <div class="winner">
+          <h5><a class="section-link" href="#">Malama Nkandu Maya Banda</a></h5>
+          <div class="aspect-ratio-box">
+            <img src="winner.webp" alt="Black woman holding a cake" class="img-fluid" />
+          </div>
+          <p style="text-transform: uppercase">
+            Lusaka baker impresses judges with her Cinnamon-Cardamom Crescent Twists!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left Side: Seasonal Specials -->
+    <div class="col-md-8 mb-4">
+      <div class="section-box">
+        <h2 class="section-title">
+          <a class="main-section-link" href="#seasonalspecials">Seasonal Specials</a>
+        </h2>
+        <div class="specials">
+          <!-- Winter Specials -->
+          <h5><a class="section-link" href="#">Winter</a></h5>
+          <p>
+            1. Gingerbread cookies <br />
+            2. Spiced apple cider donuts <br />
+            3. Cranberry orange scones <br />
+            4. Peppermint bark brownies <br />
+            5. Hot cross buns
+          </p>
+          <hr />
+
+          <!-- Spring Specials -->
+          <h5><a class="section-link" href="#">Spring</a></h5>
+          <p>
+            1. Lemon lavender pound cake <br />
+            2. Strawberry rhubarb tarts <br />
+            3. Easter egg-shaped sugar cookies <br />
+            4. Fresh fruit muffins <br />
+            5. Spring flower-themed cupcakes
+          </p>
+          <hr />
+
+          <!-- Summer Specials -->
+          <h5><a class="section-link" href="#">Summer</a></h5>
+          <p>
+            1. Watermelon basil sorbet <br />
+            2. Peach cobbler <br />
+            3. Summer fruit salads <br />
+            4. Lemon bars <br />
+            5. Ice cream sandwiches
+          </p>
+          <hr />
+
+          <!-- Autumn Specials -->
+          <h5><a class="section-link" href="#">Autumn</a></h5>
+          <p>
+            1. Pumpkin spice cake <br />
+            2. Apple cider donuts <br />
+            3. Maple pecan pie <br />
+            4. Spiced pear bread <br />
+            5. Cinnamon sugar pumpkin muffins
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side: The Icing Room -->
+    <div class="col-md-4 mb-1">
+      <div class="section-box icingroom">
+        <h2 class="section-title">
+          <a class="main-section-link" href="#icingroom">The Icing Room</a>
+        </h2>
+        <div class="icing-room">
+          <h5><a class="section-link" href="#">Some interesting polls for you</a></h5>
+          <p>
+            Cupcakes vs. Donuts — Which reigns supreme? <br />
+            Chocolate or Vanilla — LET US KNOW!
+          </p>
+          <hr />
+          <h5><a class="section-link" href="#">Chilling reviews</a></h5>
+          <p>Let us know what you think and leave us a chilling review.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Footer -->
+<div class="container-fluid" id="footer">
+  <footer>
+    <!-- Logo and Social Media -->
+    <div id="footerOne">
+      <div class="first-link">
+        <a href="#SweetDelightsBakery" class="link-one">
+          <span class="fa-solid fa-cookie-bite"></span>
+          Sweet Delight's Bakery
+        </a>
+      </div>
+      <div id="footerDiv">
+      <ul class="socialmedia">
+        <li><a class="icon" href="#"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a class="icon" href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a class="icon" href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a class="icon" href="#"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+      </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div id="footerTwo">
+      <ul class="footerUl">
+        <li><a class="footerLinks" href="#partnerships">Partnerships</a></li>
+        <li><a class="footerLinks" href="#api">API</a></li>
+        <li><a class="footerLinks" href="#termsofuse">Terms of Use</a></li>
+        <li><a class="footerLinks" href="#privacypolicy">Privacy Policy</a></li>
+        <li><a class="footerLinks" href="#cookiesettings">Cookie Settings</a></li>
+        <li><a class="footerLinks" href="#help">Help</a></li>
+        <li><a class="footerLinks" href="careers">Careers</a></li>
+      </ul>
+    </div>
+
+    <!-- Copyright -->
+    <div id="footerThree">
+      <a class="footerLinks" href="#donotsellinfo">Do not sell my information</a>
+    </div>
+
+    
+    <div id="footerFour">
+      <div class="container text-muted text-center mt-2">
+        <h5>
+          &copy; 2025
+          <a class="copyright" href="https://github.com/nziza-jpg">
+            All Rights Reserved by Nziza Tayali
+          </a>
+        </h5>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
 </html>
