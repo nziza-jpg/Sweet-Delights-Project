@@ -272,26 +272,23 @@ footer ul li {
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 430px) {
   #footerOne {
     flex-direction: column;
     align-items: center;
   }
 
   .link-one {
-    font-size: 6px;
+    font-size: 26px;
     
   }
   .link-one .fa-cookie-bite {
-    font-size: 3px;
+    font-size: 37px;
   }
 
   #footerOne a {
     font-size: 26px;
   }
 
-  .section-box h2 {
-    font-size: 20px;
-  }
 
 }
